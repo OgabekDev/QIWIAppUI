@@ -6,4 +6,8 @@
     <string name="perevod">Платежи и переводы</string>
     <string name="all">Все</string>
     <string name="qiwi">На QIWI Кошелек</string>
+    <string name="poleznoe">Полезное</string>
+    <string name="kaplate">Счета к оплате</string>
+    <string name="location">Карта терминалов</string>
+    <string name="kurs">Курсы валют</string>
 </resources>
