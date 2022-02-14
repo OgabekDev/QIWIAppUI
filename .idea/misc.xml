@@ -9,6 +9,7 @@
         <entry key="app/src/main/res/drawable/search_24.xml" value="0.2861111111111111" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.24537037037037038" />
         <entry key="app/src/main/res/layout/item_pay.xml" value="0.29739583333333336" />
+        <entry key="app/src/main/res/layout/pager_item.xml" value="0.29739583333333336" />
       </map>
     </option>
   </component>
