@@ -41,6 +41,8 @@ class MainActivity : AppCompatActivity() {
         val snapHelper: SnapHelper = PagerSnapHelper()
         snapHelper.attachToRecyclerView(rv_pager)
 
+        rv_pager.setPadding(60, 0, 60, 0)
+
         val pagerAdapter = PagerAdapter(getAllPagers())
         rv_pager.adapter = pagerAdapter
 
