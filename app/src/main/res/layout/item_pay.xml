@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/iv_pay_icon"
-        android:layout_width="75dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
         android:src="@mipmap/ic_launcher_round"
         android:layout_margin="5dp"/>
 
