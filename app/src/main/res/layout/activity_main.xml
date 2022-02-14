@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableStart="@drawable/ic_search"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#90000000"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/search"/>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/notification"
+                    android:layout_margin="15dp"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="#EF9F40">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_user_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:textAllCaps="false"
+                        android:text="@string/_0"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btn_popolnit_koshelek"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="25dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/popolnit_koshelek"
+                            android:textAllCaps="false"
+                            android:textStyle="normal"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="10dp"
+                android:gravity="center_vertical|top"
+                android:background="@drawable/rounded_layout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/error"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="normal"
+                    android:textAllCaps="false"
+                    android:text="hsudhifhsdifusdbflisbailhbsfnosdbsauydbuhabsdiuhbasu"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/perevod"
+                        android:layout_marginStart="20dp"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/all"
+                        android:textAllCaps="false"
+                        android:textStyle="normal"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="20dp"
+                        android:textColor="#2196F3"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

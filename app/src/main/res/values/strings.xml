@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QIWI App UI</string>
+    <string name="search">Поиск</string>
+    <string name="_0">0₽</string>
+    <string name="popolnit_koshelek">Пополнить Кошелек</string>
+    <string name="perevod">Платежи и переводы</string>
+    <string name="all">Вцё</string>
+    <string name="qiwi">На QIWI Кошелек</string>
+</resources>
