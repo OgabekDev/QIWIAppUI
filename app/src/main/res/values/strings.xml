@@ -10,4 +10,5 @@
     <string name="kaplate">Счета к оплате</string>
     <string name="location">Карта терминалов</string>
     <string name="kurs">Курсы валют</string>
+    <string name="info">Ограничения в вашем кошельке. Введите свои данные</string>
 </resources>

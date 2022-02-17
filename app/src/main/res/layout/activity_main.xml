@@ -140,7 +140,7 @@
                     android:textSize="22sp"
                     android:textStyle="normal"
                     android:textAllCaps="false"
-                    android:text="hsudhifhsdifusdbflisbailhbsfnosdbsauydbuhabsdiuhbasu"/>
+                    android:text="@string/info"/>
 
             </LinearLayout>
 
